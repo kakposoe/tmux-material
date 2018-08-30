@@ -2,6 +2,7 @@
 
 main() {
   local green='#98c379'
+  local blue='#4281a4'
   local dark_green='#00af87'
   local white='#abb2bf'
   local black='#282c34'
@@ -14,7 +15,7 @@ main() {
   tmux set-option -g status-justify centre
   tmux set-option -g status-style "bg=${comment_grey}"
   tmux set-option -g status-left ' #S '
-  tmux set-option -g status-left-style "bg=${green},fg=${black}"
+  tmux set-option -g status-left-style "bg=${blue},fg=${white}"
 
   local battery_section=''
   [[ "$OSTYPE" == darwin* ]] && battery_section=" | Batt:#{battery_percentage}"
