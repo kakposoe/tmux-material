@@ -13,7 +13,7 @@ main() {
   tmux set-option -g mode-style 'bg=#3e4452'
 
   tmux set-option -g status-justify centre
-  tmux set-option -g status-style "bg=${comment_green}"
+  tmux set-option -g status-style "bg=${comment_grey}"
   tmux set-option -g status-left ' #S '
   tmux set-option -g status-left-style "bg=${blue},fg=${black}"
 
@@ -25,7 +25,7 @@ main() {
   tmux set-window-option -g window-status-format ' #I:#W '
   tmux set-window-option -g window-status-style "bg=${menu_grey}"
   tmux set-window-option -g window-status-current-format ' #I:#W '
-  tmux set-window-option -g window-status-current-style "bg=${green},fg=${black}"
+  tmux set-window-option -g window-status-current-style "bg=${blue},fg=${black}"
   tmux set-window-option -g window-status-separator ''
 }
 
