@@ -2,7 +2,7 @@
 
 main() {
   local green='#98c379'
-  local blue='#4281a4'
+  local blue='#a3d5ff'
   local dark_green='#00af87'
   local white='#abb2bf'
   local black='#282c34'
@@ -22,9 +22,9 @@ main() {
   tmux set-option -g status-right " CPU:#{cpu_percentage}${battery_section} #[bg=${special_grey}] %m/%d %R "
   tmux set-option -g status-right-style "bg=${menu_grey},fg=${white}"
 
-  tmux set-window-option -g window-status-format ' #I:#W '
+  tmux set-window-option -g window-status-format ' #I/#W '
   tmux set-window-option -g window-status-style "bg=${menu_grey}"
-  tmux set-window-option -g window-status-current-format ' #I:#W '
+  tmux set-window-option -g window-status-current-format ' #I/#W '
   tmux set-window-option -g window-status-current-style "bg=${blue},fg=${black}"
   tmux set-window-option -g window-status-separator ''
 }
